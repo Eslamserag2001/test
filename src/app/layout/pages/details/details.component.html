@@ -1,0 +1,22 @@
+<div class="container p-2">
+    @if (!pid) {
+
+    <p class="alert alert-danger">there is no id </p>
+
+    }
+    @if (pid) {
+    <div>
+
+        <h2 class="text-center"> details :{{task.title}}</h2>
+        <input class="form-control" type="text" placeholder="task.title" [(ngModel)]="task.title">
+        <textarea class="form-control" type="text" placeholder="task.discription" [(ngModel)]="task.discription"></textarea>
+
+<button  routerLink="/home"  class="btn btn-info"> cansel</button>
+<button class="btn btn-danger m-1" (click)="deletetask()">delete</button>
+<button class="btn btn-primary" (click)="updatetask()">update </button>
+
+    </div>
+    }
+
+   
+</div>

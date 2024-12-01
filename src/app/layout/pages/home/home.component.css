@@ -1,0 +1,26 @@
+li:nth-child(odd){
+    background-color: #fff;
+    border-left:  4px solid rgb(245, 60, 60);
+}
+
+li:nth-child(even){
+    background-color: #f3f3f3;
+    border-left:  4px solid rgb(30, 45, 245);
+
+}
+.foter{
+    animation-name:fadin ;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    color: #f8f8f8;
+    background-color: rgba(56, 55, 55, 0.842);
+}
+@keyframes fadin{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+
+}

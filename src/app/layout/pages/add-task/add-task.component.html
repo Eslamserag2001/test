@@ -1,0 +1,11 @@
+<div class="container p-2">
+
+
+<h2 class="text-center text-success"> add a new  task</h2>
+<input #task_title class="form-control" placeholder="title of task" type="text">
+<textarea  #task_disc  class="form-control my-2" placeholder="discription of task"></textarea>
+
+<button class="btn btn-success" (click)="save_task(task_title.value, task_disc.value)">save</button>
+<button  routerLink="/home" class="btn btn-primary mx-1">cansel</button>
+
+</div>
